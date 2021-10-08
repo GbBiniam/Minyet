@@ -1,16 +1,20 @@
-<div class="row">
-  <div class="shadow-lg col-sm-4 p-3">
-    <div class="card">
+<div class="card">
+  <div class="card-img-wrapper">
+    <img class="card-img-top" src="assets/images/default3.jpg">
+    <ul class="list-inline-item text-center member-icons animate">
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+      </li>
+      <li class="list-inline-item">
+        <button class="btn btn-primary"><i class="fa fa-address-book-o" aria-hidden="true"></i></button>
+      </li>
 
-
-      <div class="card card-body p-2">
-        <img class="propImg" src="assets/images/Default.jpg">
-        <h1>{{Property.Name}}</h1>
-        <h2>{{Property.Type}}</h2>
-        <h3>{{Property.Price}}</h3>
-      </div>
-    </div>
+    </ul>
+  </div>
+  <div class="card-body p-2">
+    <h3>{{property.Name}}</h3>
+    <h3>{{property.Type}}</h3>
+    <h3>{{property.Price}}</h3>
 
   </div>
-
 </div>
