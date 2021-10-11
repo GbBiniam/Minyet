@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { HousingService } from 'src/app/services/housing.service';
 
@@ -12,12 +13,9 @@ export class PropertyListComponent implements OnInit {
 
   ngOnInit(): void {
     this.housingService.getAllProperties().subscribe(
-      (data) => {
-        this.properties = data;
-      },
-      (error) => {
-        console.error();
-      }
-    );
+      data=> {this.properties = data;},
+      error=>{ console.error();}
+
+      );
   }
 }
